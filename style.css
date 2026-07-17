@@ -1,0 +1,120 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+header{
+background:#161b22;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+color:#00ff88;
+font-size:38px;
+}
+
+header p{
+margin-top:10px;
+color:#bbb;
+}
+
+nav{
+background:#21262d;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00ff88;
+}
+
+.container{
+width:90%;
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.ad{
+margin:20px 0;
+padding:40px;
+border:2px dashed #666;
+text-align:center;
+background:#1a1a1a;
+border-radius:10px;
+font-size:20px;
+}
+
+h2{
+margin:20px 0;
+color:#00ff88;
+}
+
+button{
+background:#00c853;
+color:white;
+border:none;
+padding:12px 25px;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+margin-bottom:15px;
+}
+
+button:hover{
+background:#009624;
+}
+
+pre{
+background:#161b22;
+padding:20px;
+border-radius:10px;
+overflow:auto;
+white-space:pre-wrap;
+color:#00ff88;
+line-height:1.5;
+font-size:15px;
+}
+
+.subscribe{
+text-align:center;
+margin:40px 0;
+}
+
+.subscribe a{
+display:inline-block;
+background:#ff0000;
+color:white;
+text-decoration:none;
+padding:15px 30px;
+border-radius:8px;
+font-size:22px;
+font-weight:bold;
+}
+
+.subscribe a:hover{
+background:#cc0000;
+}
+
+footer{
+background:#161b22;
+padding:20px;
+text-align:center;
+margin-top:30px;
+color:#999;
+}

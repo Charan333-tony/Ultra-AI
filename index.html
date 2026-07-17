@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultra AI - Python Code</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <h1>Ultra AI</h1>
+    <p>Python • AI • ESP32 Tutorials</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Python</a>
+    <a href="#">AI</a>
+    <a href="#">ESP32</a>
+</nav>
+
+<div class="container">
+
+<div class="ad">
+
+<!-- Google AdSense Code -->
+
+Advertisement
+<hr>
+
+</div>
+
+
+<h2>OpenRouter AI Python Code</h2>
+
+<button onclick="copyCode()">📋 Copy Code</button>
+
+<pre id="code">
+import requests
+
+API_KEY = "YOUR_OPENROUTER_API_KEY"
+
+url = "https://openrouter.ai/api/v1/chat/completions"
+
+headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
+
+print("Ultra AI (type 'exit' to quit)")
+
+while True:
+    user = input("You: ")
+
+    if user.lower() == "exit":
+        break
+
+    data = {
+        "model": "openai/gpt-4o-mini",
+        "messages": [
+            {
+                "role": "user",
+                "content": user
+            }
+        ]
+    }
+
+    response = requests.post(url, headers=headers, json=data)
+
+    if response.status_code == 200:
+        answer = response.json()["choices"][0]["message"]["content"]
+        print("AI:", answer)
+    else:
+        print("Error:", response.status_code)
+        print(response.text)
+</pre>
+
+<div class="ad">
+
+<!-- Google AdSense Code -->
+
+Advertisement
+
+</div>
+
+<div class="subscribe">
+
+<h2>Subscribe to My YouTube Channel</h2>
+
+<a href="https://www.youtube.com/@Upside_down_tamil" target="_blank">
+📺 Subscribe @Upside_down_tamil
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Ultra AI
+</footer>
+
+<script>
+function copyCode(){
+navigator.clipboard.writeText(
+document.getElementById("code").innerText
+);
+alert("Code Copied!");
+}
+</script>
+
+</body>
+</html>
